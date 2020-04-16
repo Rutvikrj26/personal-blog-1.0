@@ -304,6 +304,13 @@ a.single-about,
   width: 100%;
 }
 
+.single-Picture-wrapper {
+  display: table-cell;
+  height: 200%;
+  width: 200%;
+
+}
+
 .single-item {
   display: table-cell;
   height: 100%;

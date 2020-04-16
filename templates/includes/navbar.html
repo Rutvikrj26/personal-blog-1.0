@@ -1,8 +1,10 @@
+{% load staticfiles %}
+
 <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="true" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="{% url 'index'  %}">RuTAG I.I.T. Delhi</a>
+        <a class="navbar-brand" href="{% url 'index'  %}"><img src="{% static 'img/top.png' %}"></img>RuTAG I.I.T. Delhi</a>
         
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav ml-auto">
@@ -31,10 +33,10 @@
             <a class="nav-link" href="{% url 'Collaborators'  %}">Collaborators</a>
           </li>
 
-       <!--   <li class="nav-item active">
-            <a class="nav-link" href="{% url 'Conferences'  %}">Conferences</a>
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'Conferences'  %}">Archives</a>
           </li>
--->
+
           <li class="nav-item active">
             <a class="nav-link" href="{% url 'RuTAG_Club'  %}">RuTAG Club</a>
           </li>
