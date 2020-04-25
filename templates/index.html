@@ -3,32 +3,32 @@
 {% block body %}
 
 <html lang="en">
-  <head>
+<head>
     <title>RuTAG</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
 
     <!-- carousel CSS -->
-    <link rel="stylesheet" href="{% static '/css/owl.carousel.min.css' %}">
+    <link href="{% static '/css/owl.carousel.min.css' %}" rel="stylesheet">
     <!--header icon CSS -->
-    <link rel="icon" href="{% static '/img/fabicon.png' %}">
+    <link href="{% static '/img/fabicon.png' %}" rel="icon">
     <!-- animations CSS -->
-    <link rel="stylesheet" href="{% static '/css/animate.min.css' %}">
+    <link href="{% static '/css/animate.min.css' %}" rel="stylesheet">
     <!-- font-awsome CSS -->
-    <link rel="stylesheet" href="{% static '/css/font-awesome.min.css' %}">
+    <link href="{% static '/css/font-awesome.min.css' %}" rel="stylesheet">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="{% static '/css/bootstrap1.min.css' %}">
+    <link href="{% static '/css/bootstrap1.min.css' %}" rel="stylesheet">
     <!--css animation-->
-    <link rel="stylesheet" href="{% static '/css/animation.css' %}">
+    <link href="{% static '/css/animation.css' %}" rel="stylesheet">
     <!--css animation-->
-    <link rel="stylesheet" href="{% static '/css/material-design-iconic-font.min.css' %}">
+    <link href="{% static '/css/material-design-iconic-font.min.css' %}" rel="stylesheet">
     <!-- style CSS -->
-    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link href="{% static 'style.css' %}" rel="stylesheet">
     <!-- responsive CSS -->
-    <link rel="stylesheet" href="{% static '/css/responsive.css' %}">
+    <link href="{% static '/css/responsive.css' %}" rel="stylesheet">
 
-      <!-- jquery 2.2.4 js-->
+    <!-- jquery 2.2.4 js-->
     <script src="{% static '/js/jquery-2.2.4.min.js' %}"></script>
     <!-- popper js-->
     <script src="{% static '/js/popper.js' %}"></script>
@@ -47,344 +47,363 @@
     <!-- main js-->
     <script src="{% static '/js/main.js' %}"></script>
 
-  </head>
-  <body>
+</head>
+<body>
+<p></p>
+ <div class="space-30"></div>
 
-  <!--welcome area start-->
+<!--welcome area start-->
 <marquee behavior="scroll" direction="left">
-Currently all the working of the RuTAG club has temporarly been closed due to outbreak of CoVID-19 Virus. Stay safe and keep washing yourselves. Try to maintain social distancing as much as possible.
+    Currently all the working of the RuTAG club has temporarly been closed due to outbreak of CoVID-19 Virus. Stay safe
+    and keep washing yourselves. Try to maintain social distancing as much as possible.
 </marquee>
 
-    <div class="about-area wow fadeInUp v2" id="home">
-        <div id="particles-js"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-12 align-self-center">
-                    <div class="welcome-right">
-                        <div class="welcome-text">
-                            <h1><img src="{% static '/img/fabicon.png' %}" alt="">Rural Technology Action Group </h1>
-                            <h4>Rural Technology Action Group (RuTAG) at Indian Institute of Technology Delhi (IITD) was established in January 2009. It is located in eight IITs (Bombay, Delhi,  Guwahati, Kanpur, Kharagpur, Madras, Roorkee, Ropar). The RuTAG cells are coordinated by the Office of the Principal Scientific Adviser (PSA) to the Govt. of India, New Delhi.</h4>
-                        </div>
-                        <div class="welcome-btn">
-                            <a href="{% url 'Events' %}" class="gradient-btn v2 mr-20">Facebook Posts</a>
-                            <a href="#" class="gradient-btn v2">Download the latest news letter</a>
-                        </div>
+<div class="about-area wow fadeInUp v2" id="home">
+    <div id="particles-js"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-12 align-self-center">
+                <div class="welcome-right">
+                    <div class="welcome-text">
+                        <h1><img alt="" src="{% static '/img/fabicon.png' %}">Rural Technology Action Group </h1>
+                        <h4>Rural Technology Action Group (RuTAG) at Indian Institute of Technology Delhi (IITD) was
+                            established in January 2009. It is located in eight IITs (Bombay, Delhi, Guwahati, Kanpur,
+                            Kharagpur, Madras, Roorkee, Ropar). The RuTAG cells are coordinated by the Office of the
+                            Principal Scientific Adviser (PSA) to the Govt. of India, New Delhi.</h4>
+                    </div>
+                    <div class="welcome-btn">
+                        <a class="gradient-btn v2 mr-20" href="{% url 'Events' %}">Facebook Posts</a>
+                        <a class="gradient-btn v2" href="#">Download the latest news letter</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!--welcome area end-->
+</div>
+<!--welcome area end-->
 
-    <!--about area start-->
-    <div class="about-area wow fadeInUp v2" id="about">
-        <div class="space-30"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <div class="heading">
-                        <h5>We are connected with</h5>
-                    </div>
-                    <div class="space-30"></div>
+<!--about area start-->
+<div class="about-area wow fadeInUp v2" id="about">
+    <div class="space-30"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <div class="heading">
+                    <h5>We are connected with</h5>
                 </div>
+                <div class="space-30"></div>
             </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="logo-carousel owl-carousel text-center">
-                        <div class="single-logo-wrapper">
-                            <div class="single-item">
-                                <img src="{% static '/img/uba.png' %}" alt="">
-                            </div>
-                        </div>
-                        <div class="single-logo-wrapper">
-                            <div class="single-item">
-                                <img src="{% static '/img/c-logo-2.png' %}" alt="">
-                            </div>
-                        </div>
-                        <div class="single-logo-wrapper">
-                            <div class="single-item">
-                                <img src="{% static '/img/c-logo-3.png' %}" alt="">
-                            </div>
-                        </div>
-                        <div class="single-logo-wrapper">
-                            <div class="single-item">
-                                <img src="{% static '/img/c-logo-4.png' %}" alt="">
-                            </div>
-                        </div>
-                        <div class="single-logo-wrapper">
-                            <div class="single-item">
-                                <img src="{% static '/img/c-logo-5.png' %}" alt="">
-                            </div>
-                        </div>
-                        <div class="single-logo-wrapper">
-                            <div class="single-item">
-                                <img src="{% static '/img/c-logo-3.png' %}" alt="">
-                            </div>
-                        </div>
-                        <div class="single-logo-wrapper">
-                            <div class="single-item">
-                                <img src="{% static '/img/c-logo-2.png' %}" alt="">
-                            </div>
-                        </div>
-                        <div class="single-logo-wrapper">
-                            <div class="single-item">
-                                <img src="{%static '/img/c-logo-5.png' %}" alt="">
-                            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="logo-carousel owl-carousel text-center">
+                    <div class="single-logo-wrapper">
+                        <div class="single-item">
+                            <img alt="" src="{% static '/img/uba.png' %}">
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="space-90"></div>
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <div class="about-mid-img">
-                        <img src="{% static '/img/zones.png' %}" alt="">
+                    <div class="single-logo-wrapper">
+                        <div class="single-item">
+                            <img alt="" src="{% static '/img/iitd.png' %}">
+                        </div>
                     </div>
-                </div>
-                <div class="col-12 col-md-6 align-self-center">
-                    <div class="heading">
-                        <h5>Our Network</h5>
+                    <div class="single-logo-wrapper">
+                        <div class="single-item">
+                            <img alt="" src="{% static '/img/psa.png' %}">
+                        </div>
                     </div>
-                    <div class="about-mid-text">
-                        <h1>Division of Coverage Zones</h1>
-                        <div class="space-10"></div>
-                        <p>Mauna Loa, the biggest volcano on Earth  half the Island of Hawaii. Just 35 miles to the northeast, Mauna Kea, known to native Hawaiians as Mauna a Wakea, rises nearly 14,000 feet above sea level.  If they are so close together, how did they develop in two parallel tracks .Sifting through teaspoons of clay and sand scraped from the floors of caves.</p>
+                    <div class="single-logo-wrapper">
+                        <div class="single-item">
+                            <img alt="" src="{% static '/img/fitt.png' %}">
+                        </div>
                     </div>
-                    <div class="space-30"></div>
-                    <a href="#" class="gradient-btn v2 about-btn"> <i class="fa fa-send-o"></i> join us on Telegram</a>
+                    <div class="single-logo-wrapper">
+                        <div class="single-item">
+                            <img alt="" src="{% static '/img/uba.png' %}">
+                        </div>
+                    </div>
+                    <div class="single-logo-wrapper">
+                        <div class="single-item">
+                            <img alt="" src="{% static '/img/iitd.png' %}">
+                        </div>
+                    </div>
+                    <div class="single-logo-wrapper">
+                        <div class="single-item">
+                            <img alt="" src="{% static '/img/psa.png' %}">
+                        </div>
+                    </div>
+                    <div class="single-logo-wrapper">
+                        <div class="single-item">
+                            <img alt="" src="{%static '/img/fitt.png' %}">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="space-90"></div>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="about-mid-img">
+                    <img alt="" src="{% static '/img/zones.png' %}">
+                </div>
+            </div>
+            <div class="col-12 col-md-6 align-self-center">
+                <div class="heading">
+                    <h5>Our Network</h5>
+                </div>
+                <div class="about-mid-text">
+                    <h1>Geographical spread of RuTAG Centres</h1>
+                    <div class="space-10"></div>
+                    <p>The Office of the Principal Scientific Advisor to the Government of India has currently
+                        established 7 RuTAG centres located at 7 IITs namely IIT Delhi, IIT Kanpur, IIT Bombay, IIT
+                        Kharagpur, IIT Madras, IIT Guwahati, and IIT Roorkee throughout the country.
+                    </p>
+                </div>
+                <div class="space-30"></div>
+                <a class="gradient-btn v2 about-btn" href="#"> <i class="fa fa-send-o"></i> join us on Telegram</a>
+            </div>
+        </div>
     </div>
-    <!--about area end-->
-    <div class="heading">
+    <div class="space-90"></div>
+</div>
+<!--about area end-->
+<div class="heading">
     <h2>Our Featured Products</h2>
 </div>
-    <!--single about area start-->
-    <div class="single-about-area wow fadeInUp">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <a href="#" class="single-about">
-                        <div class="single-about-img">
-                            <img src="{% static '/img/about-icon-1.png' %}" alt="">
-                        </div>
-                        <div class="single-about-text">
-                            <h4>Tulsi Maala Device</h4>
-                            <p>The recording starts with the patter of a summer squall. Later, a drifting tone like that of a not quite tuned in radio station rises and for a while drowns</p>
-                        </div>
-                    </a>
+<!--single about area start-->
+<div class="single-about-area wow fadeInUp">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <a class="single-about" href="#">
+                    <div class="single-about-img">
+                        <img alt="" src="{% static '/img/about-icon-1.png' %}">
+                    </div>
+                    <div class="single-about-text">
+                        <h4>Tulsi Maala Device</h4>
+                        <p>The recording starts with the patter of a summer squall. Later, a drifting tone like that of
+                            a not quite tuned in radio station rises and for a while drowns</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4">
+                <a class="single-about" href="#">
+                    <div class="single-about-img">
+                        <img alt="" src="{% static '/img/about-icon-2.png' %}">
+                    </div>
+                    <div class="single-about-text">
+                        <h4>Sheep Shearing Device</h4>
+                        <p>The recording starts with the patter of a summer squall. Later, a drifting tone like that of
+                            a not quite tuned in radio station rises and for a while drowns</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4">
+                <a class="single-about" href="#">
+                    <div class="single-about-img">
+                        <img alt="" src="{% static '/img/about-icon-3.png' %}">
+                    </div>
+                    <div class="single-about-text">
+                        <h4>Bullock Driven Tractor</h4>
+                        <p>The recording starts with the patter of a summer squall. Later, a drifting tone like that of
+                            a not quite tuned in radio station rises and for a while drowns</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<p></p>
+<h5>Checkout our other Products in Innovative Product Delivery Section on top</h5>
+<!--single about area end-->
+
+<!--Documentation area start-->
+<div class="section-padding wow fadeInUp documentation-area" id="Paper">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <div class="heading">
+                    <h5>Where can you Find us?</h5>
+                    <div class="space-10"></div>
+                    <h1>All the Participating IIT's</h1>
                 </div>
-                <div class="col-lg-4">
-                    <a href="#" class="single-about">
-                        <div class="single-about-img">
-                            <img src="{% static '/img/about-icon-2.png' %}" alt="">
-                        </div>
-                        <div class="single-about-text">
-                            <h4>Sheep Shearing Device</h4>
-                            <p>The recording starts with the patter of a summer squall. Later, a drifting tone like that of a not quite tuned in radio station rises and for a while drowns</p>
-                        </div>
-                    </a>
+                <div class="space-60"></div>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-6 col-lg">
+                <div class="single-document">
+                    <div class="document-flag">
+                        <img alt="" src="{% static '/img/flag-1.png' %}">
+                    </div>
+                    <button class="single-document-text">
+                        <span>IIT Delhi</span>
+                    </button>
                 </div>
-                <div class="col-lg-4">
-                    <a href="#" class="single-about">
-                        <div class="single-about-img">
-                            <img src="{% static '/img/about-icon-3.png' %}" alt="">
-                        </div>
-                        <div class="single-about-text">
-                            <h4>Bullock Driven Tractor</h4>
-                            <p>The recording starts with the patter of a summer squall. Later, a drifting tone like that of a not quite tuned in radio station rises and for a while drowns</p>
-                        </div>
-                    </a>
+            </div>
+            <div class="col-6 col-lg">
+                <div class="single-document">
+                    <div class="document-flag">
+                        <img alt="" src="{% static '/img/flag-2.png' %}">
+                    </div>
+                    <button class="single-document-text">
+                        <span>IIT Bombay</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-6 col-lg">
+                <div class="single-document">
+                    <div class="document-flag">
+                        <img alt="" src="{% static '/img/flag-3.png' %}">
+                    </div>
+                    <button class="single-document-text">
+                        <span>IIT Madras</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-6 col-lg">
+                <div class="single-document">
+                    <div class="document-flag">
+                        <img alt="" src="{% static '/img/flag-4.png' %}">
+                    </div>
+                    <button class="single-document-text">
+                        <span>IIT Kharagpur</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-6 col-lg">
+                <div class="single-document">
+                    <div class="document-flag">
+                        <img alt="" src="{% static '/img/flag-1.png' %}">
+                    </div>
+                    <button class="single-document-text">
+                        <span>IIT Delhi</span>
+                    </button>
                 </div>
             </div>
         </div>
     </div>
+</div>
+<!--Documentation area end-->
 
-  <p></p>
-  <h5>Checkout our other Products in Innovative Product Delivery Section on top</h5>
-    <!--single about area end-->
-
-    <!--Documentation area start-->
-    <div class="section-padding wow fadeInUp documentation-area" id="Paper">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <div class="heading">
-                        <h5>Where can you Find us?</h5>
+<!--roadmap area start-->̥
+<div class="roadmap-area section-padding wow fadeInUp" id="roadmap">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <div class="heading">
+                    <h5>Project Timeline</h5>
+                    <div class="space-10"></div>
+                    <h1>Technology Development Roadmap</h1>
+                </div>
+                <div class="space-60 d-none d-sm-block"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="roadmap-carousel owl-carousel">
+            <div class="roadmap-item">
+                <div class="single-roadmap text-center road-left">
+                    <div class="single-roadmap-img">
+                        <img alt="" src="{% static '/img/roadmap-1.png' %}">
+                    </div>
+                    <div class="space-30"></div>
+                    <div class="roadmap-text">
+                        <p>First Step</p>
                         <div class="space-10"></div>
-                        <h1>All the Participating IIT's</h1>
-                    </div>
-                    <div class="space-60"></div>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-6 col-lg">
-                    <div class="single-document">
-                        <div class="document-flag">
-                            <img src="{% static '/img/flag-1.png' %}" alt="">
-                        </div>
-                        <button class="single-document-text">
-                            <span>IIT Delhi</span>
-                        </button>
-                    </div>
-                </div>
-                <div class="col-6 col-lg">
-                    <div class="single-document">
-                        <div class="document-flag">
-                            <img src="{% static '/img/flag-2.png' %}" alt="">
-                        </div>
-                        <button class="single-document-text">
-                            <span>IIT Bombay</span>
-                        </button>
-                    </div>
-                </div>
-                <div class="col-6 col-lg">
-                    <div class="single-document">
-                        <div class="document-flag">
-                            <img src="{% static '/img/flag-3.png' %}" alt="">
-                        </div>
-                        <button class="single-document-text">
-                            <span>IIT Madras</span>
-                        </button>
-                    </div>
-                </div>
-                <div class="col-6 col-lg">
-                    <div class="single-document">
-                        <div class="document-flag">
-                            <img src="{% static '/img/flag-4.png' %}" alt="">
-                        </div>
-                        <button class="single-document-text">
-                            <span>IIT Kharagpur</span>
-                        </button>
-                    </div>
-                </div>
-                <div class="col-6 col-lg">
-                    <div class="single-document">
-                        <div class="document-flag">
-                            <img src="{% static '/img/flag-1.png' %}" alt="">
-                        </div>
-                        <button class="single-document-text">
-                            <span>IIT Delhi</span>
-                        </button>
+                        <h5>Regional Workshop</h5>
+                        <p>RuTAG IIT Delhi organizes a regional workshop twice or thrice a year with rural people.
+                            Several NGOs and rural people from that region attend the workshop. </p>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!--Documentation area end-->
-
-    <!--roadmap area start-->
-    <div class="roadmap-area section-padding wow fadeInUp" id="roadmap">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <div class="heading">
-                        <h5>history Timeline</h5>
+            <div class="roadmap-item align-self-center">
+                <div class="single-roadmap road-right">
+                    <div class="row">
+                        <div class="col-5 align-self-center">
+                            <div class="single-roadmap-img">
+                                <img alt="" src="{% static '/img/roadmap-2.png' %}">
+                            </div>
+                        </div>
+                        <div class="col-7">
+                            <div class="roadmap-text">
+                                <p>Second Step</p>
+                                <h5>Problem Identification</h5>
+                                <p>NGOs and local people come up with the technical problems which needs to be rectified
+                                    in that region in order to boost their livelihood.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="roadmap-item">
+                <div class="single-roadmap text-center road-left">
+                    <div class="single-roadmap-img">
+                        <img alt="" src="{% static '/img/roadmap-3.png' %}">
+                    </div>
+                    <div class="space-30"></div>
+                    <div class="roadmap-text">
+                        <p>Third Step</p>
                         <div class="space-10"></div>
-                        <h1>Development Roadmap</h1>
+                        <h5>Project Evaluation</h5>
+                        <p>RuTAG Core Committee selects the problems related to technology improvements which can be
+                            rectified by RuTAG. This also needs approval from the Office of the PSA.</p>
                     </div>
-                    <div class="space-60 d-none d-sm-block"></div>
                 </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="roadmap-carousel owl-carousel">
-                <div class="roadmap-item">
-                    <div class="single-roadmap text-center road-left">
-                        <div class="single-roadmap-img">
-                            <img src="{% static '/img/roadmap-1.png' %}" alt="">
-                        </div>
-                        <div class="space-30"></div>
-                        <div class="roadmap-text">
-                            <p>01.03.2017</p>
-                            <div class="space-10"></div>
-                            <h5>Concept and whitepaper</h5>
-                            <p>The recording starts with the patter of a summer squall. Later, a drifting tone like that of a in token.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="roadmap-item align-self-center">
-                    <div class="single-roadmap road-right">
-                        <div class="row">
-                            <div class="col-5 align-self-center">
-                                <div class="single-roadmap-img">
-                                    <img src="{% static '/img/roadmap-2.png' %}" alt="">
-                                </div>
+            <div class="roadmap-item align-self-center">
+                <div class="single-roadmap road-right">
+                    <div class="row">
+                        <div class="col-5 align-self-center">
+                            <div class="single-roadmap-img">
+                                <img alt="" src="{% static '/img/roadmap-5.png' %}">
                             </div>
-                            <div class="col-7">
-                                <div class="roadmap-text">
-                                    <p>21.06 .2017</p>
-                                    <h5>Recruitment of Our team</h5>
-                                    <p>The recording starts with the patter of a summer squall. Later, a drifting tone like that of a in token.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="roadmap-item">
-                    <div class="single-roadmap text-center road-left">
-                        <div class="single-roadmap-img">
-                            <img src="{% static '/img/roadmap-3.png' %}" alt="">
-                        </div>
-                        <div class="space-30"></div>
-                        <div class="roadmap-text">
-                            <p>31.08.2017</p>
-                            <div class="space-10"></div>
-                            <h5>Core Development</h5>
-                            <p>The recording starts with the patter of a summer squall. Later, a drifting tone like that of a in token.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="roadmap-item align-self-center">
-                    <div class="single-roadmap road-right">
-                        <div class="row">
-                            <div class="col-5 align-self-center">
-                                <div class="single-roadmap-img">
-                                    <img src="{% static '/img/roadmap-5.png' %}" alt="">
-                                </div>
 
-                            </div>
-                            <div class="col-7">
-                                <div class="roadmap-text">
-                                    <p>31.11.2017</p>
-                                    <h5>Main Development</h5>
-                                    <p>The recording starts with the patter of a summer squall. Later, a drifting tone like that of a in token.</p>
-                                </div>
+                        </div>
+                        <div class="col-7">
+                            <div class="roadmap-text">
+                                <p>Fourth Step</p>
+                                <h5>Project Development</h5>
+                                <p>After the project initiation, project design and development process begin. Field
+                                    agency is the direct contact for the inputs for better understanding of problem and
+                                    for the field trials from the beginning of the prototyping of the technology. </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="roadmap-item">
-                    <div class="single-roadmap text-center road-left">
-                        <div class="single-roadmap-img">
-                            <img src="{% static '/img/roadmap-4.png' %}" alt="">
-                        </div>
-                        <div class="space-30"></div>
-                        <div class="roadmap-text">
-                            <p>31.08.2017</p>
-                            <div class="space-10"></div>
-                            <h5>Core Development</h5>
-                            <p>The recording starts with the patter of a summer squall. Later, a drifting tone like that of a in token.</p>
-                        </div>
+            </div>
+            <div class="roadmap-item">
+                <div class="single-roadmap text-center road-left">
+                    <div class="single-roadmap-img">
+                        <img alt="" src="{% static '/img/roadmap-4.png' %}">
+                    </div>
+                    <div class="space-30"></div>
+                    <div class="roadmap-text">
+                        <p>Fifth Step</p>
+                        <div class="space-10"></div>
+                        <h5>Project Completion & Business Proposal</h5>
+                        <p>Business Proposal for the develped technologies is proposed and the prosals are approved for
+                            General Public Welfare. </p>
                     </div>
                 </div>
-                <div class="roadmap-item align-self-center">
-                    <div class="single-roadmap road-right">
-                        <div class="row">
-                            <div class="col-5 align-self-center">
-                                <div class="single-roadmap-img">
-                                    <img src="{% static '/img/roadmap-5.png' %}" alt="">
-                                </div>
+            </div>
+            <div class="roadmap-item align-self-center">
+                <div class="single-roadmap road-right">
+                    <div class="row">
+                        <div class="col-5 align-self-center">
+                            <div class="single-roadmap-img">
+                                <img alt="" src="{% static '/img/roadmap-5.png' %}">
+                            </div>
 
-                            </div>
-                            <div class="col-7">
-                                <div class="roadmap-text">
-                                    <p>31.11.2017</p>
-                                    <h5>Main Development</h5>
-                                    <p>The recording starts with the patter of a summer squall. Later, a drifting tone like that of a in token.</p>
-                                </div>
+                        </div>
+                        <div class="col-7">
+                            <div class="roadmap-text">
+                                <p>Final Step</p>
+                                <h5>Technology Dissemination</h5>
+                                <p>After the satisfactory results of the improved technology tested in field, it is
+                                    considered as ready to be disseminated. Field agency have the responsibility for the
+                                    dissemination of the technology.</p>
                             </div>
                         </div>
                     </div>
@@ -392,454 +411,555 @@ Currently all the working of the RuTAG club has temporarly been closed due to ou
             </div>
         </div>
     </div>
-    <!--roadmap area end-->
+</div>
+<!--roadmap area end-->
 
 
-        <!--faq area start-->
-    <div class="faq-area wow fadeInUp v2" id="faq">
+<!--faq area start-->
+<div class="faq-area wow fadeInUp v2" id="faq">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <div class="heading">
+                    <h5>faq</h5>
+                    <div class="space-10"></div>
+                    <h1>Frequently Asked Questions </h1>
+                </div>
+                <div class="space-60"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center">
+                <div class="faq-list">
+                    <ul class="nav nav-pills" id="pills-tab">
+                        <li><a class="active" data-toggle="pill" href="#one">General Questions</a></li>
+                        <li><a data-toggle="pill" href="#two">ico</a></li>
+                        <li><a data-toggle="pill" href="#three">token</a></li>
+                        <li><a data-toggle="pill" href="#four">Cryptocurrency</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="space-50"></div>
+    </div>
+    <div class="tab-content">
+        <div class="tab-pane fade show active" id="one" role="tabpanel">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 text-center">
-                    <div class="heading">
-                        <h5>faq</h5>
-                        <div class="space-10"></div>
-                        <h1>Frequently Asked Questions </h1>
-                    </div>
-                    <div class="space-60"></div>
-                </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <div class="faq-list">
-                            <ul class="nav nav-pills" id="pills-tab">
-                                <li><a class="active" data-toggle="pill" href="#one">General Questions</a></li>
-                                <li><a data-toggle="pill" href="#two">ico</a></li>
-                                <li><a data-toggle="pill" href="#three">token</a></li>
-                                <li><a data-toggle="pill" href="#four">Cryptocurrency</a></li>
-                            </ul>
+                    <div class="col-12 col-md-10 offset-1">
+                        <div class="faq-collups">
+                            <div id="accordion">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="mb-0">
+                                            <button aria-expanded="false" class="btn btn-link" data-target="#collapse1"
+                                                    data-toggle="collapse">
+                                                How to trade cryptocurrencies ?
+                                            </button>
+                                        </h5>
+                                    </div>
+
+                                    <div class="collapse" data-parent="#accordion" id="collapse1">
+                                        <div class="card-body">
+                                            <p>A putrid, nicotine-shaded mist loomed over Beijing on Thursday after a
+                                                massive sandstorm slammed into the Chinese capital bringing the latest
+                                                airpocalypse to this smog-choked city. Dozens of flights were reportedly
+                                                cancelled at Beijing’s airport, the world’s second busiest, and
+                                                authorities urged residents to stay indoors after levels of PM10, a tiny
+                                                inhalable particle linked to a variety of lung complaints.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="mb-0">
+                                            <button aria-expanded="false" class="btn btn-link" data-target="#collapse2"
+                                                    data-toggle="collapse">
+                                                The risks of investing in ICO ?
+                                            </button>
+                                        </h5>
+                                    </div>
+
+                                    <div class="collapse" data-parent="#accordion" id="collapse2">
+                                        <div class="card-body">
+                                            <p>A putrid, nicotine-shaded mist loomed over Beijing on Thursday after a
+                                                massive sandstorm slammed into the Chinese capital bringing the latest
+                                                airpocalypse to this smog-choked city. Dozens of flights were reportedly
+                                                cancelled at Beijing’s airport, the world’s second busiest, and
+                                                authorities urged residents to stay indoors after levels of PM10, a tiny
+                                                inhalable particle linked to a variety of lung complaints.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="mb-0">
+                                            <button aria-expanded="false" class="btn btn-link" data-target="#collapse3"
+                                                    data-toggle="collapse">
+                                                How to run an ICO ? Why should you invest ?
+                                            </button>
+                                        </h5>
+                                    </div>
+
+                                    <div class="collapse" data-parent="#accordion" id="collapse3">
+                                        <div class="card-body">
+                                            <p>A putrid, nicotine-shaded mist loomed over Beijing on Thursday after a
+                                                massive sandstorm slammed into the Chinese capital bringing the latest
+                                                airpocalypse to this smog-choked city. Dozens of flights were reportedly
+                                                cancelled at Beijing’s airport, the world’s second busiest, and
+                                                authorities urged residents to stay indoors after levels of PM10, a tiny
+                                                inhalable particle linked to a variety of lung complaints.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="mb-0">
+                                            <button aria-expanded="false" class="btn btn-link" data-target="#collapse4"
+                                                    data-toggle="collapse">
+                                                If you could have any kind of pet, what would you choose?
+                                            </button>
+                                        </h5>
+                                    </div>
+
+                                    <div class="collapse" data-parent="#accordion" id="collapse4">
+                                        <div class="card-body">
+                                            <p>A putrid, nicotine-shaded mist loomed over Beijing on Thursday after a
+                                                massive sandstorm slammed into the Chinese capital bringing the latest
+                                                airpocalypse to this smog-choked city. Dozens of flights were reportedly
+                                                cancelled at Beijing’s airport, the world’s second busiest, and
+                                                authorities urged residents to stay indoors after levels of PM10, a tiny
+                                                inhalable particle linked to a variety of lung complaints.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="space-50"></div>
             </div>
-                <div class="tab-content">
-                    <div class="tab-pane fade show active" id="one" role="tabpanel">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-12 col-md-10 offset-1">
-                                    <div class="faq-collups">
-                                        <div id="accordion">
-                                            <div class="card">
-                                                <div class="card-header">
-                                                    <h5 class="mb-0">
-                                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse1" aria-expanded="true">
-                                                    How to trade cryptocurrencies ?
-                                                    </button>
-                                                    </h5>
-                                                </div>
-
-                                                <div id="collapse1" class="collapse show" data-parent="#accordion">
-                                                <div class="card-body">
-                                                <p>A putrid, nicotine-shaded mist loomed over Beijing on Thursday after a massive sandstorm slammed into the Chinese capital bringing the latest airpocalypse to this smog-choked city. Dozens of flights were reportedly cancelled at Beijing’s airport, the world’s second busiest, and authorities urged residents to stay indoors after levels of PM10, a tiny inhalable particle linked to a variety of lung complaints.</p>
-                                                </div>
-                                                </div>
-                                            </div>
-                                            <div class="card">
-                                                <div class="card-header">
-                                                    <h5 class="mb-0">
-                                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse2" aria-expanded="false">
-                                                    The risks of investing in ICO ?
-                                                    </button>
-                                                    </h5>
-                                                </div>
-
-                                                <div id="collapse2" class="collapse" data-parent="#accordion">
-                                                <div class="card-body">
-                                                <p>A putrid, nicotine-shaded mist loomed over Beijing on Thursday after a massive sandstorm slammed into the Chinese capital bringing the latest airpocalypse to this smog-choked city. Dozens of flights were reportedly cancelled at Beijing’s airport, the world’s second busiest, and authorities urged residents to stay indoors after levels of PM10, a tiny inhalable particle linked to a variety of lung complaints.</p>
-                                                </div>
-                                                </div>
-                                            </div>
-                                            <div class="card">
-                                                <div class="card-header">
-                                                    <h5 class="mb-0">
-                                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse3" aria-expanded="false">
-                                                    How to run an ICO ? Why should you invest ?
-                                                    </button>
-                                                    </h5>
-                                                </div>
-
-                                                <div id="collapse3" class="collapse" data-parent="#accordion">
-                                                <div class="card-body">
-                                                <p>A putrid, nicotine-shaded mist loomed over Beijing on Thursday after a massive sandstorm slammed into the Chinese capital bringing the latest airpocalypse to this smog-choked city. Dozens of flights were reportedly cancelled at Beijing’s airport, the world’s second busiest, and authorities urged residents to stay indoors after levels of PM10, a tiny inhalable particle linked to a variety of lung complaints.</p>
-                                                </div>
-                                                </div>
-                                            </div>
-                                            <div class="card">
-                                                <div class="card-header">
-                                                    <h5 class="mb-0">
-                                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse4" aria-expanded="false">
-                                                    If you could have any kind of pet, what would you choose?
-                                                    </button>
-                                                    </h5>
-                                                </div>
-
-                                                <div id="collapse4" class="collapse" data-parent="#accordion">
-                                                <div class="card-body">
-                                                <p>A putrid, nicotine-shaded mist loomed over Beijing on Thursday after a massive sandstorm slammed into the Chinese capital bringing the latest airpocalypse to this smog-choked city. Dozens of flights were reportedly cancelled at Beijing’s airport, the world’s second busiest, and authorities urged residents to stay indoors after levels of PM10, a tiny inhalable particle linked to a variety of lung complaints.</p>
-                                                </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="two" role="tabpanel">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-10 offset-1">
-                                    <div class="faq-collups">
-                                        <div id="parrent2">
-                                            <div class="card">
-                                                <div class="card-header">
-                                                    <h5 class="mb-0">
-                                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse5" aria-expanded="true">
-                                                    How to trade cryptocurrencies ?
-                                                    </button>
-                                                    </h5>
-                                                </div>
-
-                                                <div id="collapse5" class="collapse show" data-parent="#parrent2">
-                                                <div class="card-body">
-                                                <p>A putrid, nicotine-shaded mist loomed over Beijing on Thursday after a massive sandstorm slammed into the Chinese capital bringing the latest airpocalypse to this smog-choked city. Dozens of flights were reportedly cancelled at Beijing’s airport, the world’s second busiest, and authorities urged residents to stay indoors after levels of PM10, a tiny inhalable particle linked to a variety of lung complaints.</p>
-                                                </div>
-                                                </div>
-                                            </div>
-                                            <div class="card">
-                                                <div class="card-header">
-                                                    <h5 class="mb-0">
-                                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse6" aria-expanded="false">
-                                                    The risks of investing in ICO ?
-                                                    </button>
-                                                    </h5>
-                                                </div>
-
-                                                <div id="collapse6" class="collapse" data-parent="#parrent2">
-                                                <div class="card-body">
-                                                <p>A putrid, nicotine-shaded mist loomed over Beijing on Thursday after a massive sandstorm slammed into the Chinese capital bringing the latest airpocalypse to this smog-choked city. Dozens of flights were reportedly cancelled at Beijing’s airport, the world’s second busiest, and authorities urged residents to stay indoors after levels of PM10, a tiny inhalable particle linked to a variety of lung complaints.</p>
-                                                </div>
-                                                </div>
-                                            </div>
-                                            <div class="card">
-                                                <div class="card-header">
-                                                    <h5 class="mb-0">
-                                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse7" aria-expanded="false">
-                                                    How to run an ICO ? Why should you invest ?
-                                                    </button>
-                                                    </h5>
-                                                </div>
-
-                                                <div id="collapse7" class="collapse" data-parent="#parrent2">
-                                                <div class="card-body">
-                                                <p>A putrid, nicotine-shaded mist loomed over Beijing on Thursday after a massive sandstorm slammed into the Chinese capital bringing the latest airpocalypse to this smog-choked city. Dozens of flights were reportedly cancelled at Beijing’s airport, the world’s second busiest, and authorities urged residents to stay indoors after levels of PM10, a tiny inhalable particle linked to a variety of lung complaints.</p>
-                                                </div>
-                                                </div>
-                                            </div>
-                                            <div class="card">
-                                                <div class="card-header">
-                                                    <h5 class="mb-0">
-                                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse8" aria-expanded="false">
-                                                    If you could have any kind of pet, what would you choose?
-                                                    </button>
-                                                    </h5>
-                                                </div>
-
-                                                <div id="collapse8" class="collapse" data-parent="#parrent2">
-                                                <div class="card-body">
-                                                <p>A putrid, nicotine-shaded mist loomed over Beijing on Thursday after a massive sandstorm slammed into the Chinese capital bringing the latest airpocalypse to this smog-choked city. Dozens of flights were reportedly cancelled at Beijing’s airport, the world’s second busiest, and authorities urged residents to stay indoors after levels of PM10, a tiny inhalable particle linked to a variety of lung complaints.</p>
-                                                </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="three" role="tabpanel">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-10 offset-1">
-                                    <div class="faq-collups">
-                                        <div id="parrent3">
-                                            <div class="card">
-                                                <div class="card-header">
-                                                    <h5 class="mb-0">
-                                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse9" aria-expanded="true">
-                                                    How to trade cryptocurrencies ?
-                                                    </button>
-                                                    </h5>
-                                                </div>
-
-                                                <div id="collapse9" class="collapse show" data-parent="#parrent3">
-                                                <div class="card-body">
-                                                <p>A putrid, nicotine-shaded mist loomed over Beijing on Thursday after a massive sandstorm slammed into the Chinese capital bringing the latest airpocalypse to this smog-choked city. Dozens of flights were reportedly cancelled at Beijing’s airport, the world’s second busiest, and authorities urged residents to stay indoors after levels of PM10, a tiny inhalable particle linked to a variety of lung complaints.</p>
-                                                </div>
-                                                </div>
-                                            </div>
-                                            <div class="card">
-                                                <div class="card-header">
-                                                    <h5 class="mb-0">
-                                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse10" aria-expanded="false">
-                                                    The risks of investing in ICO ?
-                                                    </button>
-                                                    </h5>
-                                                </div>
-
-                                                <div id="collapse10" class="collapse" data-parent="#parrent3">
-                                                <div class="card-body">
-                                                <p>A putrid, nicotine-shaded mist loomed over Beijing on Thursday after a massive sandstorm slammed into the Chinese capital bringing the latest airpocalypse to this smog-choked city. Dozens of flights were reportedly cancelled at Beijing’s airport, the world’s second busiest, and authorities urged residents to stay indoors after levels of PM10, a tiny inhalable particle linked to a variety of lung complaints.</p>
-                                                </div>
-                                                </div>
-                                            </div>
-                                            <div class="card">
-                                                <div class="card-header">
-                                                    <h5 class="mb-0">
-                                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse11" aria-expanded="false">
-                                                    How to run an ICO ? Why should you invest ?
-                                                    </button>
-                                                    </h5>
-                                                </div>
-
-                                                <div id="collapse11" class="collapse" data-parent="#parrent3">
-                                                <div class="card-body">
-                                                <p>A putrid, nicotine-shaded mist loomed over Beijing on Thursday after a massive sandstorm slammed into the Chinese capital bringing the latest airpocalypse to this smog-choked city. Dozens of flights were reportedly cancelled at Beijing’s airport, the world’s second busiest, and authorities urged residents to stay indoors after levels of PM10, a tiny inhalable particle linked to a variety of lung complaints.</p>
-                                                </div>
-                                                </div>
-                                            </div>
-                                            <div class="card">
-                                                <div class="card-header">
-                                                    <h5 class="mb-0">
-                                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse12" aria-expanded="false">
-                                                    If you could have any kind of pet, what would you choose?
-                                                    </button>
-                                                    </h5>
-                                                </div>
-
-                                                <div id="collapse12" class="collapse" data-parent="#parrent3">
-                                                <div class="card-body">
-                                                <p>A putrid, nicotine-shaded mist loomed over Beijing on Thursday after a massive sandstorm slammed into the Chinese capital bringing the latest airpocalypse to this smog-choked city. Dozens of flights were reportedly cancelled at Beijing’s airport, the world’s second busiest, and authorities urged residents to stay indoors after levels of PM10, a tiny inhalable particle linked to a variety of lung complaints.</p>
-                                                </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="four" role="tabpanel">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-10 offset-1">
-                                    <div class="faq-collups">
-                                        <div id="parrent4">
-                                            <div class="card">
-                                                <div class="card-header">
-                                                    <h5 class="mb-0">
-                                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse13" aria-expanded="true">
-                                                    How to trade cryptocurrencies ?
-                                                    </button>
-                                                    </h5>
-                                                </div>
-
-                                                <div id="collapse13" class="collapse show"  data-parent="#parrent4">
-                                                <div class="card-body">
-                                                <p>A putrid, nicotine-shaded mist loomed over Beijing on Thursday after a massive sandstorm slammed into the Chinese capital bringing the latest airpocalypse to this smog-choked city. Dozens of flights were reportedly cancelled at Beijing’s airport, the world’s second busiest, and authorities urged residents to stay indoors after levels of PM10, a tiny inhalable particle linked to a variety of lung complaints.</p>
-                                                </div>
-                                                </div>
-                                            </div>
-                                            <div class="card">
-                                                <div class="card-header">
-                                                    <h5 class="mb-0">
-                                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse14" aria-expanded="false">
-                                                    The risks of investing in ICO ?
-                                                    </button>
-                                                    </h5>
-                                                </div>
-
-                                                <div id="collapse14" class="collapse" data-parent="#parrent4">
-                                                <div class="card-body">
-                                                <p>A putrid, nicotine-shaded mist loomed over Beijing on Thursday after a massive sandstorm slammed into the Chinese capital bringing the latest airpocalypse to this smog-choked city. Dozens of flights were reportedly cancelled at Beijing’s airport, the world’s second busiest, and authorities urged residents to stay indoors after levels of PM10, a tiny inhalable particle linked to a variety of lung complaints.</p>
-                                                </div>
-                                                </div>
-                                            </div>
-                                            <div class="card">
-                                                <div class="card-header">
-                                                    <h5 class="mb-0">
-                                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse15" aria-expanded="false">
-                                                    How to run an ICO ? Why should you invest ?
-                                                    </button>
-                                                    </h5>
-                                                </div>
-
-                                                <div id="collapse15" class="collapse" data-parent="#parrent4">
-                                                <div class="card-body">
-                                                <p>A putrid, nicotine-shaded mist loomed over Beijing on Thursday after a massive sandstorm slammed into the Chinese capital bringing the latest airpocalypse to this smog-choked city. Dozens of flights were reportedly cancelled at Beijing’s airport, the world’s second busiest, and authorities urged residents to stay indoors after levels of PM10, a tiny inhalable particle linked to a variety of lung complaints.</p>
-                                                </div>
-                                                </div>
-                                            </div>
-                                            <div class="card">
-                                                <div class="card-header">
-                                                    <h5 class="mb-0">
-                                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse16" aria-expanded="false">
-                                                    If you could have any kind of pet, what would you choose?
-                                                    </button>
-                                                    </h5>
-                                                </div>
-
-                                                <div id="collapse16" class="collapse" data-parent="#parrent4">
-                                                <div class="card-body">
-                                                <p>A putrid, nicotine-shaded mist loomed over Beijing on Thursday after a massive sandstorm slammed into the Chinese capital bringing the latest airpocalypse to this smog-choked city. Dozens of flights were reportedly cancelled at Beijing’s airport, the world’s second busiest, and authorities urged residents to stay indoors after levels of PM10, a tiny inhalable particle linked to a variety of lung complaints.</p>
-                                                </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            <div class="space-90"></div>
         </div>
-        <!--faq area end-->
+        <div class="tab-pane fade" id="two" role="tabpanel">
+            <div class="container">
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <div class="faq-collups">
+                            <div id="parrent2">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="mb-0">
+                                            <button aria-expanded="false" class="btn btn-link" data-target="#collapse5"
+                                                    data-toggle="collapse">
+                                                How to trade cryptocurrencies ?
+                                            </button>
+                                        </h5>
+                                    </div>
 
+                                    <div class="collapse" data-parent="#parrent2" id="collapse5">
+                                        <div class="card-body">
+                                            <p>A putrid, nicotine-shaded mist loomed over Beijing on Thursday after a
+                                                massive sandstorm slammed into the Chinese capital bringing the latest
+                                                airpocalypse to this smog-choked city. Dozens of flights were reportedly
+                                                cancelled at Beijing’s airport, the world’s second busiest, and
+                                                authorities urged residents to stay indoors after levels of PM10, a tiny
+                                                inhalable particle linked to a variety of lung complaints.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="mb-0">
+                                            <button aria-expanded="false" class="btn btn-link" data-target="#collapse6"
+                                                    data-toggle="collapse">
+                                                The risks of investing in ICO ?
+                                            </button>
+                                        </h5>
+                                    </div>
 
-    <!--community area start-->
-    <div class="community-area v2 wow fadeInUp section-padding" id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <div class="heading">
-                        <h5>contact</h5>
-                        <div class="space-10"></div>
-                        <h1>Drop Your Message</h1>
+                                    <div class="collapse" data-parent="#parrent2" id="collapse6">
+                                        <div class="card-body">
+                                            <p>A putrid, nicotine-shaded mist loomed over Beijing on Thursday after a
+                                                massive sandstorm slammed into the Chinese capital bringing the latest
+                                                airpocalypse to this smog-choked city. Dozens of flights were reportedly
+                                                cancelled at Beijing’s airport, the world’s second busiest, and
+                                                authorities urged residents to stay indoors after levels of PM10, a tiny
+                                                inhalable particle linked to a variety of lung complaints.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="mb-0">
+                                            <button aria-expanded="false" class="btn btn-link" data-target="#collapse7"
+                                                    data-toggle="collapse">
+                                                How to run an ICO ? Why should you invest ?
+                                            </button>
+                                        </h5>
+                                    </div>
+
+                                    <div class="collapse" data-parent="#parrent2" id="collapse7">
+                                        <div class="card-body">
+                                            <p>A putrid, nicotine-shaded mist loomed over Beijing on Thursday after a
+                                                massive sandstorm slammed into the Chinese capital bringing the latest
+                                                airpocalypse to this smog-choked city. Dozens of flights were reportedly
+                                                cancelled at Beijing’s airport, the world’s second busiest, and
+                                                authorities urged residents to stay indoors after levels of PM10, a tiny
+                                                inhalable particle linked to a variety of lung complaints.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="mb-0">
+                                            <button aria-expanded="false" class="btn btn-link" data-target="#collapse8"
+                                                    data-toggle="collapse">
+                                                If you could have any kind of pet, what would you choose?
+                                            </button>
+                                        </h5>
+                                    </div>
+
+                                    <div class="collapse" data-parent="#parrent2" id="collapse8">
+                                        <div class="card-body">
+                                            <p>A putrid, nicotine-shaded mist loomed over Beijing on Thursday after a
+                                                massive sandstorm slammed into the Chinese capital bringing the latest
+                                                airpocalypse to this smog-choked city. Dozens of flights were reportedly
+                                                cancelled at Beijing’s airport, the world’s second busiest, and
+                                                authorities urged residents to stay indoors after levels of PM10, a tiny
+                                                inhalable particle linked to a variety of lung complaints.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="space-60"></div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-5 offset-2">
-                    <div class="contact-form">
-                        <form action="#">
-                            <input type="text" placeholder="your name">
-                            <div class="space-20"></div>
-                            <input type="email" placeholder="your email">
-                            <div class="space-20"></div>
-                            <textarea name="text" id="message" cols="30" placeholder="Write your message" rows="5"></textarea>
-                        </form>
+        </div>
+        <div class="tab-pane fade" id="three" role="tabpanel">
+            <div class="container">
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <div class="faq-collups">
+                            <div id="parrent3">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="mb-0">
+                                            <button aria-expanded="false" class="btn btn-link" data-target="#collapse9"
+                                                    data-toggle="collapse">
+                                                How to trade cryptocurrencies ?
+                                            </button>
+                                        </h5>
+                                    </div>
+
+                                    <div class="collapse" data-parent="#parrent3" id="collapse9">
+                                        <div class="card-body">
+                                            <p>A putrid, nicotine-shaded mist loomed over Beijing on Thursday after a
+                                                massive sandstorm slammed into the Chinese capital bringing the latest
+                                                airpocalypse to this smog-choked city. Dozens of flights were reportedly
+                                                cancelled at Beijing’s airport, the world’s second busiest, and
+                                                authorities urged residents to stay indoors after levels of PM10, a tiny
+                                                inhalable particle linked to a variety of lung complaints.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="mb-0">
+                                            <button aria-expanded="false" class="btn btn-link"
+                                                    data-target="#collapse10" data-toggle="collapse">
+                                                The risks of investing in ICO ?
+                                            </button>
+                                        </h5>
+                                    </div>
+
+                                    <div class="collapse" data-parent="#parrent3" id="collapse10">
+                                        <div class="card-body">
+                                            <p>A putrid, nicotine-shaded mist loomed over Beijing on Thursday after a
+                                                massive sandstorm slammed into the Chinese capital bringing the latest
+                                                airpocalypse to this smog-choked city. Dozens of flights were reportedly
+                                                cancelled at Beijing’s airport, the world’s second busiest, and
+                                                authorities urged residents to stay indoors after levels of PM10, a tiny
+                                                inhalable particle linked to a variety of lung complaints.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="mb-0">
+                                            <button aria-expanded="false" class="btn btn-link"
+                                                    data-target="#collapse11" data-toggle="collapse">
+                                                How to run an ICO ? Why should you invest ?
+                                            </button>
+                                        </h5>
+                                    </div>
+
+                                    <div class="collapse" data-parent="#parrent3" id="collapse11">
+                                        <div class="card-body">
+                                            <p>A putrid, nicotine-shaded mist loomed over Beijing on Thursday after a
+                                                massive sandstorm slammed into the Chinese capital bringing the latest
+                                                airpocalypse to this smog-choked city. Dozens of flights were reportedly
+                                                cancelled at Beijing’s airport, the world’s second busiest, and
+                                                authorities urged residents to stay indoors after levels of PM10, a tiny
+                                                inhalable particle linked to a variety of lung complaints.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="mb-0">
+                                            <button aria-expanded="false" class="btn btn-link"
+                                                    data-target="#collapse12" data-toggle="collapse">
+                                                If you could have any kind of pet, what would you choose?
+                                            </button>
+                                        </h5>
+                                    </div>
+
+                                    <div class="collapse" data-parent="#parrent3" id="collapse12">
+                                        <div class="card-body">
+                                            <p>A putrid, nicotine-shaded mist loomed over Beijing on Thursday after a
+                                                massive sandstorm slammed into the Chinese capital bringing the latest
+                                                airpocalypse to this smog-choked city. Dozens of flights were reportedly
+                                                cancelled at Beijing’s airport, the world’s second busiest, and
+                                                authorities urged residents to stay indoors after levels of PM10, a tiny
+                                                inhalable particle linked to a variety of lung complaints.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="four" role="tabpanel">
+            <div class="container">
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <div class="faq-collups">
+                            <div id="parrent4">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="mb-0">
+                                            <button aria-expanded="false" class="btn btn-link"
+                                                    data-target="#collapse13" data-toggle="collapse">
+                                                How to trade cryptocurrencies ?
+                                            </button>
+                                        </h5>
+                                    </div>
+
+                                    <div class="collapse" data-parent="#parrent4" id="collapse13">
+                                        <div class="card-body">
+                                            <p>A putrid, nicotine-shaded mist loomed over Beijing on Thursday after a
+                                                massive sandstorm slammed into the Chinese capital bringing the latest
+                                                airpocalypse to this smog-choked city. Dozens of flights were reportedly
+                                                cancelled at Beijing’s airport, the world’s second busiest, and
+                                                authorities urged residents to stay indoors after levels of PM10, a tiny
+                                                inhalable particle linked to a variety of lung complaints.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="mb-0">
+                                            <button aria-expanded="false" class="btn btn-link"
+                                                    data-target="#collapse14" data-toggle="collapse">
+                                                The risks of investing in ICO ?
+                                            </button>
+                                        </h5>
+                                    </div>
+
+                                    <div class="collapse" data-parent="#parrent4" id="collapse14">
+                                        <div class="card-body">
+                                            <p>A putrid, nicotine-shaded mist loomed over Beijing on Thursday after a
+                                                massive sandstorm slammed into the Chinese capital bringing the latest
+                                                airpocalypse to this smog-choked city. Dozens of flights were reportedly
+                                                cancelled at Beijing’s airport, the world’s second busiest, and
+                                                authorities urged residents to stay indoors after levels of PM10, a tiny
+                                                inhalable particle linked to a variety of lung complaints.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="mb-0">
+                                            <button aria-expanded="false" class="btn btn-link"
+                                                    data-target="#collapse15" data-toggle="collapse">
+                                                How to run an ICO ? Why should you invest ?
+                                            </button>
+                                        </h5>
+                                    </div>
+
+                                    <div class="collapse" data-parent="#parrent4" id="collapse15">
+                                        <div class="card-body">
+                                            <p>A putrid, nicotine-shaded mist loomed over Beijing on Thursday after a
+                                                massive sandstorm slammed into the Chinese capital bringing the latest
+                                                airpocalypse to this smog-choked city. Dozens of flights were reportedly
+                                                cancelled at Beijing’s airport, the world’s second busiest, and
+                                                authorities urged residents to stay indoors after levels of PM10, a tiny
+                                                inhalable particle linked to a variety of lung complaints.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="mb-0">
+                                            <button aria-expanded="false" class="btn btn-link"
+                                                    data-target="#collapse16" data-toggle="collapse">
+                                                If you could have any kind of pet, what would you choose?
+                                            </button>
+                                        </h5>
+                                    </div>
+
+                                    <div class="collapse" data-parent="#parrent4" id="collapse16">
+                                        <div class="card-body">
+                                            <p>A putrid, nicotine-shaded mist loomed over Beijing on Thursday after a
+                                                massive sandstorm slammed into the Chinese capital bringing the latest
+                                                airpocalypse to this smog-choked city. Dozens of flights were reportedly
+                                                cancelled at Beijing’s airport, the world’s second busiest, and
+                                                authorities urged residents to stay indoors after levels of PM10, a tiny
+                                                inhalable particle linked to a variety of lung complaints.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="space-90"></div>
+</div>
+<!--faq area end-->
+
+
+<!--community area start-->
+<div class="community-area v2 wow fadeInUp section-padding" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <div class="heading">
+                    <h5>contact</h5>
+                    <div class="space-10"></div>
+                    <h1>Drop Your Message</h1>
+                </div>
+                <div class="space-60"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-5 offset-2">
+                <div class="contact-form">
+                    <form action="#">
+                        <input placeholder="your name" type="text">
                         <div class="space-20"></div>
-                        <a href="#" class="gradient-btn v2">Send message</a>
-                    </div>
-                </div>
-                <div class="col-lg-5">
-                    <div class="contact-details">
-                        <div class="single-details">
-                            <small>For general enquires</small>
-                            <div class="space-10"></div>
-                            <a href="#">info@cyptian.com</a>
-                        </div>
-                        <div class="space-30"></div>
-                        <div class="single-details">
-                            <small>For general enquires</small>
-                            <div class="space-10"></div>
-                            <a href="#">info@cyptian.com</a>
-                        </div>
-                        <div class="space-30"></div>
-                        <div class="single-details">
-                            <small>anything else? just call us</small>
-                            <div class="space-10"></div>
-                            <a href="#">22588 268 2563 584</a>
-                        </div>
-                    </div>
+                        <input placeholder="your email" type="email">
+                        <div class="space-20"></div>
+                        <textarea cols="30" id="message" name="text" placeholder="Write your message"
+                                  rows="5"></textarea>
+                    </form>
+                    <div class="space-20"></div>
+                    <a class="gradient-btn v2" href="#">Send message</a>
                 </div>
             </div>
-            <div class="space-90"></div>
-            <div class="row">
-                <div class="col-12 text-center">
-                    <div class="heading">
-                        <h1>Join our community</h1>
+            <div class="col-lg-5">
+                <div class="contact-details">
+                    <div class="single-details">
+                        <small>For general enquires</small>
+                        <div class="space-10"></div>
+                        <a href="#">info@cyptian.com</a>
                     </div>
-                    <div class="space-60"></div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="single-community text-center">
-                        <ul>
-                            <li>
-                            <a class="google-plus" href="#"><i class="fa fa-google-plus"></i></a> </li>
-                            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-                        </ul>
+                    <div class="space-30"></div>
+                    <div class="single-details">
+                        <small>For general enquires</small>
+                        <div class="space-10"></div>
+                        <a href="#">info@cyptian.com</a>
+                    </div>
+                    <div class="space-30"></div>
+                    <div class="single-details">
+                        <small>anything else? just call us</small>
+                        <div class="space-10"></div>
+                        <a href="#">22588 268 2563 584</a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="space-90"></div>
-
-        <!--footer area start-->
-        <div class="footera-area wow fadeInDown">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-sm-6 col-lg-4">
-                        <div class="single-footer">
-                            <div class="logo-area footer">
-                                <a href="#"><img src="{% static '/img/logo-top.png' %}" alt=""></a>
-                            </div>
-                            <div class="space-20"></div>
-                            <p>Swimming hundreds of feet beneath the ocean’s surface in many parts of the world are prolific architects called giant larvaceans. </p>
-                            <div class="space-10"></div>
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-
-
-                        </div>
-                    </div>
-
-
-                    <div class="col-12 col-sm-6 col-lg-4">
-                        <div class="single-footer">
-                            <p>Subscribe to our Newsletter</p>
-                            <div class="space-20"></div>
-                            <div class="footer-form v2">
-                                <form action="#">
-                                    <input type="email" placeholder="Email Address">
-                                    <a href="" class="gradient-btn subscribe">GO</a>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-sm-6 col-lg-4">
-                        <div class="single-footer">
-                            <p>website developed by: Rutvik Solanki (rutvikrj26@gmail.com)
-                            </p>
-                            <div class="space-20"></div>
-                        </div>
-                    </div>
-<center>All the content in the above website belongs to RuTAG IIT Delhi and All rights reserved by RuTAG IIT Delhi</center>
-
+        <div class="row">
+            <div class="col-12 text-center">
+                <div class="heading">
+                    <h1>Join our community</h1>
+                </div>
+                <div class="space-60"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="single-community text-center">
+                    <ul>
+                        <li>
+                            <a class="google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <!--footer area end-->
     </div>
-    <!--community area end-->
+    <div class="space-90"></div>
 
-      </body>
+    <!--footer area start-->
+    <div class="footera-area wow fadeInDown">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-footer">
+                        <div class="logo-area footer">
+                            <a href="#"><img alt="" src="{% static '/img/logo-top.png' %}"></a>
+                        </div>
+                        <div class="space-20"></div>
+                        <p>Swimming hundreds of feet beneath the ocean’s surface in many parts of the world are prolific
+                            architects called giant larvaceans. </p>
+                        <div class="space-10"></div>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+
+
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-footer">
+                        <p>Subscribe to our Newsletter</p>
+                        <div class="space-20"></div>
+                        <div class="footer-form v2">
+                            <form action="#">
+                                <input placeholder="Email Address" type="email">
+                                <a class="gradient-btn subscribe" href="", style="color: #00ff00">GO</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-footer">
+                        <p>website developed by: Rutvik Solanki (rutvikrj26@gmail.com)
+                        </p>
+                        <div class="space-20"></div>
+                    </div>
+                </div>
+                <center>All the content in the above website belongs to RuTAG IIT Delhi and All rights reserved by RuTAG
+                    IIT Delhi
+                </center>
+
+            </div>
+        </div>
+    </div>
+    <!--footer area end-->
+</div>
+<!--community area end-->
+
+</body>
 </html>
 {% endblock body %}
 
