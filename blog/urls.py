@@ -33,6 +33,7 @@ urlpatterns = [
     path('RuTAG_Club/', views.RuTAG_Club, name="RuTAG_Club"),
     path('about/',views.about,name = "about"),
     path('articles/',include("article.urls")),
+    path('events/' ,include("events.urls")),
     path('user/',include("user.urls")),
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
